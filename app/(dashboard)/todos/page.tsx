@@ -7,11 +7,13 @@ const getData = async () => {
 };
 
 const TasksPage = async () => {
-    await new Promise<void>((resolve) => setTimeout(() => resolve(), 2000))
-    const todos = await getData();
-    return <div className="flex justify-center p-4">
-      <TodoList todos={todos}/>
-    </div>;
-  };
+  // await new Promise<void>((resolve, reject) => setTimeout(() => reject(), 2000))
+  const todos = await getData();
+  return (
+    <div className="flex justify-center p-4">
+      <TodoList todos={todos} />
+    </div>
+  );
+};
 
 export default TasksPage;

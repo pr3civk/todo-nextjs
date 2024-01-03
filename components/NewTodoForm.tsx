@@ -6,7 +6,7 @@ const NewTodoForm = () => {
       <input
         name="content"
         type="text"
-        className="text-white p-2 rounded w-96 bg-purple-500 border border-white focus:shadow-purple-500 focus:shadow-lg"
+        className="text-white p-2 rounded w-96 md:w-[36rem] bg-purple-500 border border-white focus:shadow-purple-500 focus:shadow-lg"
       />
       <button type="submit" className="py-2 hover:text-purple-400 transition">Add New Task</button>
     </form>
